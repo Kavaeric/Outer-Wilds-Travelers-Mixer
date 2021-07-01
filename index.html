@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=800, initial-scale=1.0">
+    <title>Travelers</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="AudioContainer">
+        <h1>Travelers Audio Mixer</h1>
+        <p>Audio mixer for The Outer Wilds' "Travelers" theme.</p>
+        <ul>
+            <li>Raise the volume sliders of each of the parts to your taste.</li>
+            <li>Pausing/playing the audio will cause it to fall out of sync.</li>
+            <li>Use the volume sliders instead to turn off/on.</li>
+        </ul>
+        <h2>Banjo</h2>
+        <audio class="audioplayer" id="myAudio1" controls loop muted preload="auto">
+            <source src="audio/OW_TravelerTheme_banjo.ogg" type="audio/ogg">
+        </audio>
+
+        <h2>Drums</h2>
+        <audio class="audioplayer" id="myAudio2" controls loop muted preload="auto">
+            <source src="audio/OW_TravelerTheme_drums.ogg" type="audio/ogg">
+        </audio>
+
+        <h2>Flute</h2>
+        <audio class="audioplayer" id="myAudio3" controls loop muted preload="auto">
+            <source src="audio/OW_TravelerTheme_flute.ogg" type="audio/ogg">
+        </audio>
+
+        <h2>Harmonica</h2>
+        <audio class="audioplayer" id="myAudio4" controls loop muted preload="auto">
+            <source src="audio/OW_TravelerTheme_harmonica.ogg" type="audio/ogg">
+        </audio>
+
+        <h2>Piano</h2>
+        <audio class="audioplayer" id="myAudio5" controls loop muted preload="auto">
+            <source src="audio/OW_TravelerTheme_piano.ogg" type="audio/ogg">
+        </audio>
+
+        <h2>Whistle</h2>
+        <audio class="audioplayer" id="myAudio6" controls loop muted preload="auto">
+            <source src="audio/OW_TravelerTheme_whistling.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+    <script>
+        window.onload = setTimeout( function(){ playAudio(); }, 1000);;
+
+        function playAudio() { 
+            document.getElementById("myAudio1").play(); 
+            document.getElementById("myAudio2").play(); 
+            document.getElementById("myAudio3").play(); 
+            document.getElementById("myAudio4").play(); 
+            document.getElementById("myAudio5").play(); 
+            document.getElementById("myAudio6").play(); 
+        } 
+    </script>
+
+</body>
+</html>
